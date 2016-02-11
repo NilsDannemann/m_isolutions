@@ -1,4 +1,11 @@
 @import '{}/lib/styles/normalize';
 @import '{}/lib/styles/config';
 @import '{}/lib/styles/mixins';
-@import '{}/client/components/header/header';
+@import '{}/lib/styles/base';
+@import '{}/lib/styles/typography';
+
+// Components
+@import '{}/client/components/navigation/navigation';
+@import '{}/client/components/banner/banner';
+@import '{}/client/components/filter/filter';
+

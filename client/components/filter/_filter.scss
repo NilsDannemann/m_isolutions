@@ -1,0 +1,25 @@
+.filter	{
+	@include container();
+	@include flexbox();
+	@include column(1/1);
+	background: #fff;
+	box-shadow: $box-shadow;
+
+	&__filter1,
+	&__filter2,
+	&__filter3 {
+		@include column(2/20);
+		border-right: $border;
+		padding: $whitespace;
+	}
+	&__main {
+		@include column(10/20);
+		padding: $whitespace;
+	}
+	&__aside1,
+	&__aside2 {
+		@include column(2/20);
+		border-left: $border;
+		padding: $whitespace;
+	}
+}

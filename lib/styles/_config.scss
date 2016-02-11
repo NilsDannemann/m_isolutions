@@ -6,7 +6,7 @@
 
 $color-black		: #333;
 $color-spaceblack	: #171F2D;
-$color-grey			: #eee;
+$color-grey			: rgba(0,0,0,0.1);
 $color-spacegrey	: #a7adba;
 
 $color-red			: #F44336;
@@ -50,7 +50,7 @@ $breakpoints: (
 	'm' 	: 650px,
 	'l'  	: 800px,
 	'xl'	: 960px,
-	'xxl'	: 1680px
+	'xxl'	: 100%
 );
 
 
@@ -78,7 +78,7 @@ $font-text		: 'Roboto', sans-serif;
 $font-size		: 14px;
 $line-height	: 1.6;
 $color-headline	: $color-black;
-$color-text		: lighten($color-black, 20%);
+$color-text		: lighten($color-black, 5%);
 
 
 /* =======================================*/

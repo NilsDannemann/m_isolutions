@@ -1,0 +1,12 @@
+{
+  "electron": {
+    "name": "Isolutions Prototype",
+    "version": "0.1.0",
+    "launchPath": "/",
+    "height": 900,
+    "width": 1600,
+    "frame": true,
+    "title-bar-style": "full",
+    "resizable": true
+  }
+}

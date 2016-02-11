@@ -1,0 +1,31 @@
+.banner	{
+	@include container();
+	@include flexbox($align: stretch);
+	@include column(1/1);
+	background: $color-brand;
+	min-height: $whitespace*6;
+	color: #fff;
+
+	&__info1,
+	&__info2,
+	&__info3 {
+		@include column(2/20);
+		border-right: $border;
+		padding: $whitespace;
+	}
+	&__image {
+		border-radius: $border-radius;
+		box-shadow: $box-shadow;
+		border: 4px solid #fff;
+	}
+	&__main {
+		@include column(10/20);
+		padding: $whitespace;
+	}
+	&__aside1,
+	&__aside2 {
+		@include column(2/20);
+		border-left: $border;
+		padding: $whitespace;
+	}
+}
