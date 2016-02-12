@@ -5,4 +5,16 @@
 	overflow-y: scroll;
 	border-right: $border;
 	padding: $whitespace;
+	
+	@include respond-below(xxl) {
+		z-index: 1;
+		transition: all 125ms ease-in;
+		background: $color-grey;
+		margin-left: -15%;
+		margin-right: -15%;
+
+		&--is-active {
+			transform: translateX(100%);
+		}
+	}
 }

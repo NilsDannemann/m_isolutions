@@ -1,7 +1,7 @@
 .navigation	{
-	@include container();
 	@include flexbox();
 	@include column();
+	z-index: 10;
 	background: #fff;
 
 	&__controls {

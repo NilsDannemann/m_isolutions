@@ -7,6 +7,7 @@ body {
 	@include flexbox();
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 	background: $color-grey;
 }
 
@@ -16,11 +17,14 @@ img {
 }
 
 .container {
-	@include container();
 	@include flexbox($direction: column, $justify: flex-start);
 	@include column();
+	width: 100%;
 	min-height: 600px;
-	height: 100vh;
+
+	@include respond-above(s) {
+		height: 100vh;
+	}
 }
 
 .icon {

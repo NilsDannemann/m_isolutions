@@ -4,4 +4,8 @@
 	@include hide-scrollbars;
 	overflow-y: scroll;
 	padding: $whitespace;
+
+	@include respond-below(xxl) {
+		@include column();
+	}
 }

@@ -1,5 +1,4 @@
 .banner	{
-	@include container();
 	@include flexbox($align: stretch);
 	@include column();
 	background: $color-brand;
