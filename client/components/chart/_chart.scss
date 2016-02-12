@@ -1,0 +1,34 @@
+.chart {
+	max-height: 650px;
+}
+
+/* Use this selector to override the line style on a given series */
+.ct-series-a .ct-line {
+  stroke: $color-brand;
+}
+
+/* This selector overrides the points style on line charts. Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
+.ct-series-a .ct-point {
+  stroke: $color-brand;
+}
+
+/* Use this selector to override bar styles on bar charts. Bars are also strokes so you have maximum freedom in styling them. */
+.ct-series-a .ct-bar {
+  stroke: $color-brand;
+}
+.ct-series-b .ct-bar {
+  stroke: lighten($color-brand, 10%);
+}
+.ct-series-c .ct-bar {
+  stroke: $color-yellow;
+}
+
+/* Pie charts consist of solid slices where you can use this selector to override the default style. */
+.ct-series-a .ct-slice-pie {
+  fill: hsl(120, 40%, 60%);
+}
+
+/* Donut charts get built from Pie charts but with a fundamentally difference in the drawing approach. The donut is drawn using arc strokes for maximum freedom in styling */
+.ct-series-a .ct-slice-donut {
+  stroke: $color-brand;
+}

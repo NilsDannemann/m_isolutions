@@ -5,17 +5,23 @@
 	background: #fff;
 
 	&__controls {
+		@include flexbox($align: center);
 		@include column(25/100, $behavior: stacking);
 		border-right: $border;
 		padding: $whitespace/2 $whitespace;
 	}
 	&__main {
+		@include flexbox($align: center);
 		@include column(60/100, $behavior: stacking);
 		padding: $whitespace/2 $whitespace;
 	}
 	&__settings {
+		@include flexbox($align: center);
 		@include column(15/100, $behavior: stacking);
 		border-left: $border;
 		padding: $whitespace/2 $whitespace;
+	}
+	&--icons {
+		font-size: $font-size + 4;
 	}
 }

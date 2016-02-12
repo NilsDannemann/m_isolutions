@@ -25,7 +25,7 @@ $color-green		: #4CAF50;
 $color-lightgreen	: #8BC34A;
 $color-lime			: #CDDC39;
 
-$color-yellow		: #FFEB3B;
+$color-yellow		: #e4e437;
 $color-amber		: #FFC107;
 $color-orange		: #FF9800;
 
@@ -121,7 +121,7 @@ $box-shadow			: $box-shadow-size-2;
 }
 
 @mixin transition() {
-	transition: all 125ms ease-in;
+	transition: all 165ms ease-in;
 }
 
 @mixin hide-scrollbars() {

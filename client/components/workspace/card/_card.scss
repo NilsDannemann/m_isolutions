@@ -1,7 +1,7 @@
 .card {
 	@include flexbox();
 	@include column();
-	min-height: $whitespace*4;
+	min-height: $whitespace*5;
 	padding: $whitespace/2;
 	margin-bottom: $whitespace/2;
 	border-radius: $border-radius;
