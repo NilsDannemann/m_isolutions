@@ -20,3 +20,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 seba:minifiers-autoprefixer
 fourseven:scss
 meson:electron
+pagebakers:ionicons
+mfpierre:chartist-js

@@ -22,3 +22,10 @@ img {
 	min-height: 600px;
 	height: 100vh;
 }
+
+.icon {
+	color: $color-brand;
+
+	&--left {float: left;}
+	&--right {float: right;}
+}
