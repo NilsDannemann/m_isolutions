@@ -6,7 +6,7 @@
 
 $color-black		: #333;
 $color-spaceblack	: #171F2D;
-$color-grey			: rgba(0,0,0,0.1);
+$color-grey			: rgba(0,0,0,0.15);
 $color-spacegrey	: #a7adba;
 
 $color-red			: #F44336;
@@ -19,7 +19,7 @@ $color-darkblue		: #1e70cd;
 
 $color-indigo		: #3F51B5;
 $color-cyan			: #00BCD4;
-$color-teal			: #009688;
+$color-teal			: #248c90;
 
 $color-green		: #4CAF50;
 $color-lightgreen	: #8BC34A;
@@ -75,7 +75,7 @@ $breakpoints: (
 
 $font-headline	: 'Raleway', sans-serif;
 $font-text		: 'Roboto', sans-serif;
-$font-size		: 14px;
+$font-size		: 13px;
 $line-height	: 1.6;
 $color-headline	: $color-black;
 $color-text		: lighten($color-black, 5%);
@@ -122,6 +122,12 @@ $box-shadow			: $box-shadow-size-2;
 
 @mixin transition() {
 	transition: all 125ms ease-in;
+}
+
+@mixin hide-scrollbars() {
+	&::-webkit-scrollbar {width: 0 !important;}
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
 }
 
 

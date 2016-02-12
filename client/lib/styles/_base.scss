@@ -1,0 +1,24 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	@include flexbox();
+	margin: 0;
+	padding: 0;
+	background: $color-grey;
+}
+
+img {
+	display:block;
+	width: 100%;
+}
+
+.container {
+	@include container();
+	@include flexbox($direction: column, $justify: flex-start);
+	@include column();
+	min-height: 600px;
+	height: 100vh;
+}

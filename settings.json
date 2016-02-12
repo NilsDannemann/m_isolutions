@@ -2,6 +2,11 @@
   "electron": {
     "name": "Isolutions Prototype",
     "version": "0.1.0",
+    "description": "First Prototype - Goal: Behavior Showcase",
+    "icon": {
+      "darwin": "public/images/icon.icns",
+      "win32": "public/images/icon.ico"
+    },
     "launchPath": "/",
     "height": 900,
     "width": 1600,

@@ -1,0 +1,7 @@
+.view {
+	@include flexbox($direction: column, $justify: flex-start, $wrap: nowrap);
+	@include column(70/100, $behavior: stacking);
+	@include hide-scrollbars;
+	overflow-y: scroll;
+	padding: $whitespace;
+}

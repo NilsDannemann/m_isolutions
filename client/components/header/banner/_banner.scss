@@ -1,30 +1,34 @@
 .banner	{
 	@include container();
 	@include flexbox($align: stretch);
-	@include column(1/1);
+	@include column();
 	background: $color-brand;
 	min-height: $whitespace*6;
 	color: #fff;
 
 	&__info1,
-	&__info2,
-	&__info3 {
-		@include column(2/20);
+	&__info2 {
 		border-right: $border;
 		padding: $whitespace;
 	}
+	&__info1 {
+		@include column(15/100, $behavior: stacking);
+	}
+	&__info2 {
+		@include column(10/100, $behavior: stacking);
+	}
 	&__image {
+		max-width: 100px;
 		border-radius: $border-radius;
 		box-shadow: $box-shadow;
-		border: 4px solid #fff;
+		border: 2px solid #fff;
 	}
 	&__main {
-		@include column(10/20);
+		@include column(60/100, $behavior: stacking);
 		padding: $whitespace;
 	}
-	&__aside1,
-	&__aside2 {
-		@include column(2/20);
+	&__aside {
+		@include column(15/100, $behavior: stacking);
 		border-left: $border;
 		padding: $whitespace;
 	}

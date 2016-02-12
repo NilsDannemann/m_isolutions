@@ -1,0 +1,7 @@
+.process {
+	@include container();
+	@include flexbox();
+	@include column();
+	padding: $whitespace;
+	border-top: $border;
+}

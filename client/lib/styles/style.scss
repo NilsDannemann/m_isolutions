@@ -1,0 +1,21 @@
+@import '{}/client/lib/styles/normalize';
+@import '{}/client/lib/styles/config';
+@import '{}/client/lib/styles/mixins';
+@import '{}/client/lib/styles/base';
+@import '{}/client/lib/styles/typography';
+
+// Components - Header
+@import '{}/client/components/header/navigation/navigation';
+@import '{}/client/components/header/banner/banner';
+@import '{}/client/components/header/filter/filter';
+
+// Components - Workspace
+@import '{}/client/components/workspace/workspace';
+@import '{}/client/components/workspace/measure/measure';
+@import '{}/client/components/workspace/view/view';
+@import '{}/client/components/workspace/therapy/therapy';
+@import '{}/client/components/workspace/card/card';
+
+// Components - Footer
+@import '{}/client/components/footer/process/process';
+

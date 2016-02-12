@@ -1,24 +1,21 @@
 .filter	{
 	@include container();
 	@include flexbox();
-	@include column(1/1);
+	@include column();
 	background: #fff;
 	box-shadow: $box-shadow;
 
-	&__filter1,
-	&__filter2,
-	&__filter3 {
-		@include column(2/20);
+	&__filter {
+		@include column(15/100, $behavior: stacking);
 		border-right: $border;
 		padding: $whitespace;
 	}
 	&__main {
-		@include column(10/20);
+		@include column(70/100, $behavior: stacking);
 		padding: $whitespace;
 	}
-	&__aside1,
-	&__aside2 {
-		@include column(2/20);
+	&__aside{
+		@include column(15/100, $behavior: stacking);
 		border-left: $border;
 		padding: $whitespace;
 	}

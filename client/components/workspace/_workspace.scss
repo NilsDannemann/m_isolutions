@@ -1,0 +1,6 @@
+.workspace {
+	@include container();
+	@include flexbox($align: stretch);
+	@include column();
+	flex: 1;
+}

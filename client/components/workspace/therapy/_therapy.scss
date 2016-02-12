@@ -1,0 +1,8 @@
+.therapy {
+	@include flexbox($direction: column, $justify: flex-start, $wrap: nowrap);
+	@include column(15/100, $behavior: stacking);
+	@include hide-scrollbars;
+	overflow-y: scroll;
+	border-left: $border;
+	padding: $whitespace;
+}

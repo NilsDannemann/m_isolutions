@@ -1,0 +1,21 @@
+.navigation	{
+	@include container();
+	@include flexbox();
+	@include column();
+	background: #fff;
+
+	&__controls {
+		@include column(25/100, $behavior: stacking);
+		border-right: $border;
+		padding: $whitespace/2 $whitespace;
+	}
+	&__main {
+		@include column(60/100, $behavior: stacking);
+		padding: $whitespace/2 $whitespace;
+	}
+	&__settings {
+		@include column(15/100, $behavior: stacking);
+		border-left: $border;
+		padding: $whitespace/2 $whitespace;
+	}
+}
