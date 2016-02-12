@@ -6,15 +6,18 @@
 	box-shadow: $box-shadow;
 
 	&__filter {
+		@include flexbox()
 		@include column(15/100, $behavior: stacking);
 		border-right: $border;
 		padding: $whitespace;
 	}
 	&__main {
+		@include flexbox()
 		@include column(70/100, $behavior: stacking);
 		padding: $whitespace;
 	}
 	&__aside{
+		@include flexbox()
 		@include column(15/100, $behavior: stacking);
 		border-left: $border;
 		padding: $whitespace;

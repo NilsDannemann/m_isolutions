@@ -1,0 +1,27 @@
+.alert {
+	
+	&__content {
+		@include flexbox($align: center);
+	}
+	&__icon {
+		font-size: $font-size + 7;
+		margin-right: 10px;
+	}
+}
+// sAlert
+.s-alert-box {
+	box-shadow: $box-shadow-size-4;
+	border-radius: $border-radius;
+}
+.s-alert-success {
+	background: #fff;
+	color: $color-black;
+
+	.alert__icon {color: $color-brand;}
+}
+.s-alert-info {
+	background: #fff;
+	color: $color-black;
+
+	.alert__icon {color: $color-yellow;}
+}
