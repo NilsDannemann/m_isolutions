@@ -3,7 +3,7 @@ Meteor.startup(function () {
 		effect: 'slide',
 		sAlertIcon: 'asterisk',
 		position: 'bottom-right',
-		timeout: 2500,
+		timeout: 3000,
 		html: true,
 		onRouteClose: false,
 		stack: true,
