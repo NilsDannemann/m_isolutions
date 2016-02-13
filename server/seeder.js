@@ -20,7 +20,7 @@ Meteor.startup(function() {
 
 	// Start seeding
 	if (Patients.find({}).count() === 0) {
-		_(1000).times(function(n) {
+		_(10000).times(function(n) {
 			Factory.create('patient');
 		});
 	}

@@ -4,6 +4,8 @@
 	background: $color-brand;
 	min-height: $whitespace*6;
 	color: #fff;
+	
+	&.is-active {min-height: $whitespace*12;}
 
 	&__info1,
 	&__info2 {

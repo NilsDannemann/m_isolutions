@@ -9,8 +9,8 @@ Meteor.startup(function () {
 		stack: true,
 		offset: 75,
 		stack: {
-		    spacing: 15, // in px
-		    limit: 3
+			spacing: 15, // in px
+			limit: 3
 		},
 		beep: false,
 		onClose: _.noop

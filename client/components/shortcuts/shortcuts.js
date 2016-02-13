@@ -7,17 +7,41 @@ Mousetrap.bind('shift+s', function() {
 });
 
 // Arrows
-Mousetrap.bind('shift+left', function() { 
-	sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + reft' });
+Mousetrap.bind('shift+left', function() {
+	var asideLeft = Session.get('asideLeft');
+
+	if (asideLeft == null) {
+		Session.set('asideLeft', 'is-active');
+	} else {
+		Session.set('asideLeft', null);
+	};
 });
 Mousetrap.bind('shift+right', function() { 
-	sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + right' });
+	var asideRight = Session.get('asideRight');
+
+	if (asideRight == null) {
+		Session.set('asideRight', 'is-active');
+	} else {
+		Session.set('asideRight', null);
+	};
 });
 Mousetrap.bind('shift+up', function() { 
-	sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + up' });
+	var asideTop = Session.get('asideTop');
+
+	if (asideTop == null) {
+		Session.set('asideTop', 'is-active');
+	} else {
+		Session.set('asideTop', null);
+	};
 });
 Mousetrap.bind('shift+down', function() { 
-	sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + down' });
+	var asideBottom = Session.get('asideBottom');
+
+	if (asideBottom == null) {
+		Session.set('asideBottom', 'is-active');
+	} else {
+		Session.set('asideBottom', null);
+	};
 });
 
 // multiple combinations to same callback
