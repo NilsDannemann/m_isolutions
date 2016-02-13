@@ -26,3 +26,8 @@ juliancwirko:s-alert
 juliancwirko:s-alert-slide
 aldeed:tabular
 aldeed:simple-schema
+practicalmeteor:faker
+dburles:factory
+msavin:mongol
+aldeed:collection2
+aldeed:autoform
