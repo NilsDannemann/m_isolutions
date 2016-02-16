@@ -10,7 +10,9 @@
 		<!-- Workspace -->
 		<section class="workspace">
 			{{> Template.dynamic template=workspaceLeft}}
-			{{> Template.dynamic template=workspaceMain}}
+			<section class="view">
+				{{> Template.dynamic template=workspaceMain}}
+			</section>
 			{{> Template.dynamic template=workspaceRight}}
 		</section>
 		

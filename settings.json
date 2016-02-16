@@ -7,7 +7,6 @@
       "darwin": "public/images/icon.icns",
       "win32": "public/images/icon.ico"
     },
-    "launchPath": "/",
     "height": 900,
     "width": 1600,
     "frame": true,

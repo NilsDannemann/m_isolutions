@@ -1,8 +1,7 @@
 Template.banner.helpers({
 	// State
 	state: function(){
-		var asideTop = Session.get('asideTop');
-		return asideTop;
+		return Session.get('asideTop');
 	},
 	// Patient
 	firstname: function() {
