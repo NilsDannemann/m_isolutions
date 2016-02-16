@@ -1,7 +1,6 @@
 // Bar Chart
-Template.barChart.onRendered(function () {
+Template.barChart.onRendered(function() {
 	var currentPatient = Session.get('currentPatient');
-	console.log(currentPatient.dataset1);
 	var data = {
 		labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
 		series: [
@@ -27,7 +26,7 @@ Template.barChart.onRendered(function () {
 });
 
 // Line Chart
-Template.lineChart.onRendered(function () {
+Template.lineChart.onRendered(function() {
 	var currentPatient = Session.get('currentPatient');
 	var data = {
 		labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
@@ -54,7 +53,7 @@ Template.lineChart.onRendered(function () {
 });
 
 // Heat Line Chart
-Template.heatLineChart.onRendered(function () {
+Template.heatLineChart.onRendered(function() {
 	var currentPatient = Session.get('currentPatient');
 	var data = {
 		labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
