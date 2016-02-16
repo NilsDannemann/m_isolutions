@@ -13,10 +13,10 @@
 		padding: $whitespace;
 	}
 	&__info1 {
-		@include column(15/100, $behavior: stacking);
+		width: $sidebar-width;
 	}
 	&__info2 {
-		@include column(10/100, $behavior: stacking);
+		width: $sidebar-addon-width;
 	}
 	&__image {
 		max-width: 100px;
@@ -25,11 +25,11 @@
 		border: 2px solid #fff;
 	}
 	&__main {
-		@include column(60/100, $behavior: stacking);
+		flex: 1;
 		padding: $whitespace;
 	}
 	&__aside {
-		@include column(15/100, $behavior: stacking);
+		width: $sidebar-width;
 		border-left: $border;
 		padding: $whitespace;
 	}

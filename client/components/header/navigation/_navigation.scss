@@ -4,24 +4,35 @@
 	z-index: 10;
 	background: #fff;
 
+	&--icons {
+		@include flexbox();
+		font-size: $font-size;
+	}
+	&--icon {
+		cursor: pointer;
+		color: darken($color-grey, 45%);
+		padding: $whitespace/2 $whitespace/1.5;
+		border-left: $border;
+
+		&:hover {color: $color-black;}
+		&:last-child {border-right: $border;}
+	}
+
 	&__controls {
 		@include flexbox($align: center);
-		@include column(25/100, $behavior: stacking);
+		width: $sidebar-width + $sidebar-addon-width;
 		border-right: $border;
-		padding: $whitespace/2 $whitespace;
+		padding: 0 $whitespace;
 	}
 	&__main {
 		@include flexbox($align: center);
-		@include column(60/100, $behavior: stacking);
-		padding: $whitespace/2 $whitespace;
+		flex: 1;
+		padding: 0 $whitespace;
 	}
 	&__settings {
 		@include flexbox($align: center);
-		@include column(15/100, $behavior: stacking);
+		width: $sidebar-width;
 		border-left: $border;
-		padding: $whitespace/2 $whitespace;
-	}
-	&--icons {
-		font-size: $font-size + 4;
+		padding: 0 $whitespace;
 	}
 }

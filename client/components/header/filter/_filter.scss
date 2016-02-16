@@ -7,18 +7,18 @@
 
 	&__filter {
 		@include flexbox()
-		@include column(15/100, $behavior: stacking);
+		width: $sidebar-width;
 		border-right: $border;
 		padding: $whitespace;
 	}
 	&__main {
 		@include flexbox()
-		@include column(70/100, $behavior: stacking);
+		flex: 1;
 		padding: $whitespace;
 	}
 	&__aside{
 		@include flexbox()
-		@include column(15/100, $behavior: stacking);
+		width: $sidebar-width;
 		border-left: $border;
 		padding: $whitespace;
 	}

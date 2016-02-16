@@ -6,10 +6,22 @@
 .ct-series-a .ct-line {
   stroke: $color-brand;
 }
+.ct-series-b .ct-line {
+  stroke: lighten($color-brand, 10%);
+}
+.ct-series-c .ct-line {
+  stroke: $color-yellow;
+}
 
 /* This selector overrides the points style on line charts. Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
 .ct-series-a .ct-point {
   stroke: $color-brand;
+}
+.ct-series-b .ct-point {
+  stroke: lighten($color-brand, 10%);
+}
+.ct-series-c .ct-point {
+  stroke: $color-yellow;
 }
 
 /* Use this selector to override bar styles on bar charts. Bars are also strokes so you have maximum freedom in styling them. */
@@ -23,12 +35,35 @@
   stroke: $color-yellow;
 }
 
+/* Heat Line Chart */
+.ct-series-a .ct-area {
+  fill: $color-brand;
+}
+.ct-series-b .ct-area {
+  fill: $color-brand;
+}
+.ct-series-c .ct-area {
+  fill: $color-yellow;
+}
+
 /* Pie charts consist of solid slices where you can use this selector to override the default style. */
 .ct-series-a .ct-slice-pie {
-  fill: hsl(120, 40%, 60%);
+  stroke: $color-brand;
+}
+.ct-series-b .ct-slice-pie {
+  stroke: $color-brand;
+}
+.ct-series-c .ct-slice-pie {
+  stroke: $color-yellow;
 }
 
 /* Donut charts get built from Pie charts but with a fundamentally difference in the drawing approach. The donut is drawn using arc strokes for maximum freedom in styling */
 .ct-series-a .ct-slice-donut {
   stroke: $color-brand;
+}
+.ct-series-b .ct-slice-donut {
+  stroke: lighten($color-brand, 10%);
+}
+.ct-series-c .ct-slice-donut {
+  stroke: $color-yellow;
 }

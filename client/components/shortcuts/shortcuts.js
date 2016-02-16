@@ -7,7 +7,7 @@ Mousetrap.bind('shift+s', function() {
 });
 
 // Arrows
-Mousetrap.bind('shift+left', function() {
+Mousetrap.bind('m', function() {
 	var asideLeft = Session.get('asideLeft');
 
 	if (asideLeft == null) {
@@ -16,7 +16,7 @@ Mousetrap.bind('shift+left', function() {
 		Session.set('asideLeft', null);
 	};
 });
-Mousetrap.bind('shift+right', function() { 
+Mousetrap.bind('t', function() { 
 	var asideRight = Session.get('asideRight');
 
 	if (asideRight == null) {
@@ -25,7 +25,7 @@ Mousetrap.bind('shift+right', function() {
 		Session.set('asideRight', null);
 	};
 });
-Mousetrap.bind('shift+up', function() { 
+Mousetrap.bind('b', function() { 
 	var asideTop = Session.get('asideTop');
 
 	if (asideTop == null) {
@@ -34,7 +34,7 @@ Mousetrap.bind('shift+up', function() {
 		Session.set('asideTop', null);
 	};
 });
-Mousetrap.bind('shift+down', function() { 
+Mousetrap.bind('p', function() { 
 	var asideBottom = Session.get('asideBottom');
 
 	if (asideBottom == null) {
