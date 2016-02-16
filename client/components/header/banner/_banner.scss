@@ -25,6 +25,7 @@
 		border: 2px solid #fff;
 	}
 	&__main {
+		@include flexbox($justify: flex-start);
 		flex: 1;
 		padding: $whitespace;
 	}

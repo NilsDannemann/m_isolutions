@@ -13,6 +13,8 @@ body {
 ul, ol {
 	margin: 0;
 	padding: 0;
+	line-height: $line-height;
+	list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
