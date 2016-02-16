@@ -5,6 +5,7 @@
 @import '{}/client/lib/styles/typography';
 
 // Components - Header
+@import '{}/client/components/header/header';
 @import '{}/client/components/header/navigation/navigation';
 @import '{}/client/components/header/banner/banner';
 @import '{}/client/components/header/filter/filter';
@@ -14,12 +15,13 @@
 @import '{}/client/components/workspace/measure/measure';
 @import '{}/client/components/workspace/view/view';
 @import '{}/client/components/workspace/therapy/therapy';
-@import '{}/client/components/workspace/card/card';
 
 // Components - Footer
+@import '{}/client/components/footer/footer';
 @import '{}/client/components/footer/process/process';
 
 // Components
+@import '{}/client/components/card/card';
 @import '{}/client/components/chart/chart';
 @import '{}/client/components/table/table';
 @import '{}/client/components/alert/alert';

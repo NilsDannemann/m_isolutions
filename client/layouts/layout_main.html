@@ -1,0 +1,22 @@
+<template name="layout_main">
+	<div class="container">
+		<!-- Header -->
+		<section class="header">
+			{{> Template.dynamic template=headerTop}}
+			{{> Template.dynamic template=headerMain}}
+			{{> Template.dynamic template=headerBottom}}
+		</section>
+		
+		<!-- Workspace -->
+		<section class="workspace">
+			{{> Template.dynamic template=workspaceLeft}}
+			{{> Template.dynamic template=workspaceMain}}
+			{{> Template.dynamic template=workspaceRight}}
+		</section>
+		
+		<!-- Footer -->
+		<section class="footer">
+			{{> Template.dynamic template=footerMain}}
+		</section>
+	</div>
+</template>

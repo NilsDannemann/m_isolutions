@@ -1,0 +1,4 @@
+.footer {
+	@include flexbox($align: stretch);
+	@include column();
+}

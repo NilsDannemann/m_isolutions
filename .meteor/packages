@@ -33,3 +33,5 @@ aldeed:collection2
 aldeed:autoform
 mousetrap:mousetrap
 msavin:sessioninspector
+kadira:flow-router
+kadira:blaze-layout
