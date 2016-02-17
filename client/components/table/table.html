@@ -1,4 +1,17 @@
 <template name="table">
 	<h2>View: Table</h2>
-	{{> tabular table=TabularTables.Patients class="table table-striped table-bordered table-condensed"}}
+	<div class="workspace__column">
+		<div class="card">
+			{{> tabular table=TabularTables.Patients id="datatable" class="table hover cell-border dt-responsive nowrap isplay responsive no-wrap"}}
+		</div>
+	</div>
+	<div class="workspace__column workspace__column--third">
+		{{> card_workspace}}
+	</div>
+	<div class="workspace__column workspace__column--third">
+		{{> card_workspace}}
+	</div>
+	<div class="workspace__column workspace__column--third">
+		{{> card_workspace}}
+	</div>
 </template>

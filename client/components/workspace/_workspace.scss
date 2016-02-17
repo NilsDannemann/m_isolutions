@@ -2,4 +2,12 @@
 	@include flexbox($align: stretch);
 	@include column();
 	flex: 1;
+
+	&__column {
+		@include column(1/1, $gutter: true);
+	}
+
+	&__column--third {
+		@include column(1/3, $gutter: true);
+	}
 }

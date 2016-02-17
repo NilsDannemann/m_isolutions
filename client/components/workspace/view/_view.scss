@@ -1,5 +1,5 @@
 .view {
-	@include flexbox($direction: column, $justify: flex-start, $wrap: nowrap);
+	@include flexbox();
 	@include hide-scrollbars;
 	flex: 1;
 	overflow-y: scroll;

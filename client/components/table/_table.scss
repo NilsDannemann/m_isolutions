@@ -1,8 +1,10 @@
-/* =======================================*/
-/* 
-/* COMPONENT: table
-/* 
-/* =======================================*/
+.dataTables_wrapper {
+    @include column();
+}
+.table {
+    @include column();
+}
+
 table.dataTable {
     width: 100%;
     margin: 0 auto;
@@ -21,9 +23,11 @@ table.dataTable tfoot th {
 
 table.dataTable thead th,
 table.dataTable thead td {
-    padding: $whitespace/2 $whitespace/1.5 $whitespace/2 $whitespace/2;
+    padding: $whitespace/2 $whitespace/1.5 $whitespace/2 0;
     border-bottom: 2px solid $color-brand;
 	outline: none;
+    text-align: left;
+    position: relative;
 }
 
 table.dataTable thead th:active,
@@ -37,8 +41,6 @@ table.dataTable tfoot td {
     border-top: 2px solid $color-brand;
 	outline: none;
 }
-
-
 
 // Sorting
 table.dataTable thead .sorting,
@@ -59,8 +61,10 @@ table.dataTable thead .sorting_desc_disabled {
 		float: right;
 		font-size: 10px;
 		color: darken($color-grey, 20%);
-		margin-right: -$whitespace/2;
-		padding-top: 2px;
+        opacity: 1;
+        position: absolute;
+        right: 5px;
+        top: 12px;
 	}
 }
 
@@ -97,6 +101,9 @@ table.dataTable thead .sorting_desc_disabled {
 }
 
 
+table.dataTable tbody {
+    border-bottom: $border;
+}
 
 table.dataTable tbody tr {
 }
@@ -411,7 +418,7 @@ table.dataTable td {
 	margin-left: $whitespace/4;
 	margin-right: $whitespace/4;
 	margin-bottom: $whitespace;
-	padding: $whitespace/2 $whitespace $whitespace/2 $whitespace/2;
+	padding: $whitespace/3 $whitespace/4;
 	border: $border;
 	font-size: $font-size;
 	color: $color-black;
@@ -429,7 +436,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_filter input {
     margin-left: $whitespace/2;
     margin-bottom: $whitespace;
-    padding: $whitespace/2 $whitespace/4;
+    padding: $whitespace/3 $whitespace/4;
     border: $border;
     font-size: $font-size;
     color: $color-black;
@@ -441,13 +448,19 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
-    padding-top: $whitespace*1.25;
+    padding-top: $whitespace/2;
 }
+
+.dataTables_wrapper .dataTables_paginate .pagination {
+    @include flexbox();
+    margin: 0 !important;
+}
+
 
 .dataTables_wrapper .dataTables_paginate {
     float: right;
     text-align: right;
-    padding-top: $whitespace;
+    padding-top: $whitespace/2;
     display: flex;
 
     .previous {
@@ -459,7 +472,6 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:not(.previous):not(.next) {
-    padding: $whitespace/2;
     margin: 0 2px;
 }
 
@@ -707,7 +719,7 @@ table.dataTable>tbody>tr.child span.dtr-title {
     display: inline-block;
     min-width: $whitespace*5;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 div.dtr-modal {

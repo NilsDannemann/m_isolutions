@@ -1,5 +1,6 @@
 .chart {
-	max-height: 450px;
+  @include column();
+  max-height: 450px;
 }
 
 /* Use this selector to override the line style on a given series */

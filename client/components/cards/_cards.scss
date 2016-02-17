@@ -2,9 +2,13 @@
 	@include flexbox();
 	@include column();
 	min-height: $whitespace*5;
-	padding: $whitespace/2;
+	padding: $whitespace;
 	margin-bottom: $whitespace/2;
 	border-radius: $border-radius;
 	box-shadow: $box-shadow;
 	background: #fff;
+	
+	&--small {	
+		padding: $whitespace/2;
+	}
 }

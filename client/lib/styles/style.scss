@@ -21,7 +21,10 @@
 @import '{}/client/components/footer/process/process';
 
 // Components
-@import '{}/client/components/card/card';
+@import '{}/client/components/cards/cards';
 @import '{}/client/components/charts/charts';
 @import '{}/client/components/table/table';
 @import '{}/client/components/alert/alert';
+
+// Dirty fixes
+@import '{}/client/fixes_dirty';
