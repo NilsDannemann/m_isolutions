@@ -1,13 +1,23 @@
 // Keys
-Mousetrap.bind('shift+i', function() { 
-	sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + i' });
+Mousetrap.bind('g h', function() { 
+	FlowRouter.go('/');
 });
-Mousetrap.bind('shift+s', function() { 
-	sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'You\'ve pressed shift + s' });
+Mousetrap.bind('s l', function() { 
+	FlowRouter.go('/workspace/line');
+});
+Mousetrap.bind('s b', function() { 
+	FlowRouter.go('/workspace/bar');
+});
+Mousetrap.bind('s h', function() { 
+	FlowRouter.go('/workspace/heat');
+});
+Mousetrap.bind('s t', function() { 
+	FlowRouter.go('/workspace/table');
 });
 
+
 // Arrows
-Mousetrap.bind('m', function() {
+Mousetrap.bind('ctrl+right', function() {
 	var asideLeft = Session.get('asideLeft');
 
 	if (asideLeft == null) {
@@ -16,7 +26,7 @@ Mousetrap.bind('m', function() {
 		Session.set('asideLeft', null);
 	};
 });
-Mousetrap.bind('t', function() { 
+Mousetrap.bind('ctrl+left', function() { 
 	var asideRight = Session.get('asideRight');
 
 	if (asideRight == null) {
@@ -25,7 +35,7 @@ Mousetrap.bind('t', function() {
 		Session.set('asideRight', null);
 	};
 });
-Mousetrap.bind('b', function() { 
+Mousetrap.bind('ctrl+down', function() { 
 	var asideTop = Session.get('asideTop');
 
 	if (asideTop == null) {
@@ -34,7 +44,7 @@ Mousetrap.bind('b', function() {
 		Session.set('asideTop', null);
 	};
 });
-Mousetrap.bind('p', function() { 
+Mousetrap.bind('ctrl+up', function() { 
 	var asideBottom = Session.get('asideBottom');
 
 	if (asideBottom == null) {

@@ -5,17 +5,6 @@
 
 
 
-/* =======================================*/
-/* 
-/* COMPONENT: table
-/* 
-/* =======================================*/
-$(document).ready(function() {
-	// Init DataTables
-    $('#datatable').DataTable({
-    	responsive: true
-    });
-});
 
 /*!
  DataTables 1.10.10
@@ -4225,19 +4214,19 @@ $(document).ready(function() {
     });
     l.breakpoints = [{
         name: "desktop",
-        width: 1600
+        width: Infinity
     }, {
         name: "tablet-l",
-        width: 960
+        width: 1024
     }, {
         name: "tablet-p",
-        width: 800
+        width: 768
     }, {
         name: "mobile-l",
-        width: 650
+        width: 480
     }, {
         name: "mobile-p",
-        width: 410
+        width: 320
     }];
     l.display = {
         childRow: function(a, b, d) {

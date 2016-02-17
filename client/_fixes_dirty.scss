@@ -1,0 +1,17 @@
+@include respond-below(m) {
+	html::after {
+		content: 'This Demo is not yet optimized for small devices.';
+		display: block;
+		width: 70%;
+		text-align: center;
+		font-size: $font-size;
+		padding: $whitespace;
+		margin: $whitespace auto;
+		border-radius: $border-radius;
+		background: #fff;
+		box-shadow: $box-shadow;
+	}
+	body {
+		display: none;
+	}
+}

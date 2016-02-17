@@ -1,7 +1,7 @@
 .card {
 	@include flexbox();
 	@include column();
-	min-height: $whitespace*5;
+	min-height: $whitespace*6;
 	padding: $whitespace;
 	margin-bottom: $whitespace/2;
 	border-radius: $border-radius;
@@ -10,5 +10,31 @@
 	
 	&--small {	
 		padding: $whitespace/2;
+	}
+
+	&__header {
+		@include flexbox();
+		@include column();
+		border-bottom: $border;
+		padding-bottom: $whitespace/2;
+		margin-bottom: $whitespace/2;
+	}
+	&__icon {
+		color: darken($color-grey, 25%);
+	}
+	&__image {
+		@include column(3/4);
+	}
+	&__value {
+		@include column(1/4);
+		text-align: center;
+		border-left: $border;
+
+		span {
+			display: block;
+			font-weight: bold;
+			font-size: $font-size + 2;
+			margin: $whitespace/4 0;
+		}
 	}
 }

@@ -6,20 +6,23 @@
 	box-shadow: $box-shadow;
 
 	&__filter {
-		@include flexbox()
+		@include flexbox($align: center);
+		height: $toolbar-height;
 		width: $sidebar-width;
 		border-right: $border;
-		padding: $whitespace;
+		padding: 0 $whitespace;
 	}
 	&__main {
-		@include flexbox()
+		@include flexbox($align: center);
 		flex: 1;
-		padding: $whitespace;
+		height: $toolbar-height;
+		padding: 0 $whitespace;
 	}
 	&__aside{
-		@include flexbox()
+		@include flexbox($align: center);
+		height: $toolbar-height;
 		width: $sidebar-width;
 		border-left: $border;
-		padding: $whitespace;
+		padding: 0 $whitespace;
 	}
 }

@@ -2,21 +2,16 @@
 	@include flexbox($align: stretch);
 	@include column();
 	background: $color-brand;
+	background: radial-gradient(ellipse at 0% 0%, lighten($color-brand, 10%) 0%, $color-brand 50%);
 	min-height: $whitespace*6;
 	color: #fff;
 	
 	&.is-active {min-height: $whitespace*12;}
 
-	&__info1,
-	&__info2 {
+	&__info1 {
 		border-right: $border;
 		padding: $whitespace;
-	}
-	&__info1 {
 		width: $sidebar-width;
-	}
-	&__info2 {
-		width: $sidebar-addon-width;
 	}
 	&__image {
 		max-width: 100px;
@@ -33,5 +28,18 @@
 		width: $sidebar-width;
 		border-left: $border;
 		padding: $whitespace;
+	}
+
+	// List
+	&__list {
+		margin-right: $whitespace*2;
+	}
+	&__listitem {
+		
+		span {
+			display: inline-block;
+			min-width: 80px; 
+			font-weight: bold;
+		}
 	}
 }
