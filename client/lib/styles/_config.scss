@@ -124,7 +124,7 @@ $box-shadow			: $box-shadow-size-2;
 }
 
 @mixin transition() {
-	transition: all 165ms ease-in;
+	transition: all 100ms ease-in;
 }
 
 @mixin hide-scrollbars() {

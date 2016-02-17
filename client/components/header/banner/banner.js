@@ -4,6 +4,10 @@ Template.banner.helpers({
 		return Session.get('asideTop');
 	},
 	// Patient
+	photo: function() {
+		var currentPatient = Session.get('currentPatient');
+		return currentPatient.photo;
+	},
 	firstname: function() {
 		var currentPatient = Session.get('currentPatient');
 		return currentPatient.firstname;

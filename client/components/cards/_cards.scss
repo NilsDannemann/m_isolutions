@@ -1,6 +1,7 @@
 .card {
 	@include flexbox();
 	@include column();
+	@include transition();
 	min-height: $whitespace*6;
 	padding: $whitespace;
 	margin-bottom: $whitespace/2;
@@ -10,6 +11,11 @@
 	
 	&--small {	
 		padding: $whitespace/2;
+
+		&:hover {
+			box-shadow: $box-shadow-size-3;
+			transform: translatey(-5px) scale(1.05);
+		}
 	}
 
 	&__header {

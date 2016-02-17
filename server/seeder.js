@@ -1,6 +1,9 @@
 Meteor.startup(function() {
 	// Define seed
 	Factory.define('patient', Patients, {
+		photo: function() {
+			return faker.random.arrayElement(["patient1.jpg", "patient2.jpg", "patient3.jpg", "patient4.jpg", "patient5.jpg"]);
+		},
 		firstname: function() {
 			return faker.name.firstName();
 		},

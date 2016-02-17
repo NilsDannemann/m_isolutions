@@ -2,22 +2,22 @@
 Mousetrap.bind('g h', function() { 
 	FlowRouter.go('/');
 });
-Mousetrap.bind('s l', function() { 
+Mousetrap.bind('v l', function() { 
 	FlowRouter.go('/workspace/line');
 });
-Mousetrap.bind('s b', function() { 
+Mousetrap.bind('v b', function() { 
 	FlowRouter.go('/workspace/bar');
 });
-Mousetrap.bind('s h', function() { 
+Mousetrap.bind('v h', function() { 
 	FlowRouter.go('/workspace/heat');
 });
-Mousetrap.bind('s t', function() { 
+Mousetrap.bind('v t', function() { 
 	FlowRouter.go('/workspace/table');
 });
 
 
 // Arrows
-Mousetrap.bind('ctrl+right', function() {
+Mousetrap.bind('ctrl+shift+left', function() {
 	var asideLeft = Session.get('asideLeft');
 
 	if (asideLeft == null) {
@@ -26,7 +26,7 @@ Mousetrap.bind('ctrl+right', function() {
 		Session.set('asideLeft', null);
 	};
 });
-Mousetrap.bind('ctrl+left', function() { 
+Mousetrap.bind('ctrl+shift+right', function() { 
 	var asideRight = Session.get('asideRight');
 
 	if (asideRight == null) {
@@ -35,7 +35,7 @@ Mousetrap.bind('ctrl+left', function() {
 		Session.set('asideRight', null);
 	};
 });
-Mousetrap.bind('ctrl+down', function() { 
+Mousetrap.bind('ctrl+shift+up', function() { 
 	var asideTop = Session.get('asideTop');
 
 	if (asideTop == null) {
@@ -44,7 +44,7 @@ Mousetrap.bind('ctrl+down', function() {
 		Session.set('asideTop', null);
 	};
 });
-Mousetrap.bind('ctrl+up', function() { 
+Mousetrap.bind('ctrl+shift+down', function() { 
 	var asideBottom = Session.get('asideBottom');
 
 	if (asideBottom == null) {
