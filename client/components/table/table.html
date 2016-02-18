@@ -2,7 +2,52 @@
 	<h2>View - Table</h2>
 	<div class="workspace__column">
 		<div class="card">
-			{{> tabular table=TabularTables.Patients id="datatable" class="table hover cell-border dt-responsive nowrap isplay responsive no-wrap"}}
+            <table id="datatable" class="table hover cell-border dt-responsive nowrap" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="dt-head-left">First</th>
+                        <th class="dt-head-left">Last</th>
+                        <th class="dt-head-left">Phone</th>
+                        <th class="dt-head-left">Email</th>
+                        <th class="dt-head-left">Country</th>
+                        <th class="dt-head-left">Exam1</th>
+                        <th class="dt-head-left">Exam2</th>
+                        <th class="dt-head-left">Status</th>
+                        <th class="dt-head-left">Condition</th>
+                        <th class="dt-head-left">Payment</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th class="dt-head-left">First</th>
+                        <th class="dt-head-left">Last</th>
+                        <th class="dt-head-left">Phone</th>
+                        <th class="dt-head-left">Email</th>
+                        <th class="dt-head-left">Country</th>
+                        <th class="dt-head-left">Exam1</th>
+                        <th class="dt-head-left">Exam2</th>
+                        <th class="dt-head-left">Status</th>
+                        <th class="dt-head-left">Condition</th>
+                        <th class="dt-head-left">Payment</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    {{#each tablerows}}
+                        <tr>
+                            <td>{{firstname}}</td>
+                            <td>{{lastname}}</td>
+                            <td>{{phone}}</td>
+                            <td>{{email}}</td>
+                            <td>{{country}}</td>
+                            <td>{{lastExamination}}</td>
+                            <td>{{nextExamination}}</td>
+                            <td>{{status}}</td>
+                            <td>{{condition}}</td>
+                            <td>{{payment}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
 		</div>
 	</div>
 	<div class="workspace__column workspace__column--third">

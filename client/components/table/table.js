@@ -1,8 +1,17 @@
 // Code in common.js
 
+Template.table.onRendered(function() {
+    $('#datatable').DataTable({
+        responsive: true
+    });
+});
 
 
-
+ Template.table.helpers({
+    tablerows: function(){
+        return Patients.find({});
+    }
+ });
 
 
 
