@@ -4,10 +4,11 @@
 	flex: 1;
 
 	&__column {
-		@include column(1/1, $gutter: true);
+		@include column();
 	}
 
 	&__column--third {
 		@include column(1/3, $gutter: true);
+		margin-bottom: 0;
 	}
 }
