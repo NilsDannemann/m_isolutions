@@ -1,5 +1,5 @@
 .measure {
-	@include flexbox($direction: column, $justify: flex-start, $wrap: nowrap);
+	@include flexbox($direction: row, $justify: flex-start, $wrap: wrap);
 	@include hide-scrollbars;
 	width: $sidebar-width;
 	transition: transform 165ms ease-in;

@@ -1,11 +1,18 @@
 .therapy {
-	@include flexbox($direction: column, $justify: flex-start, $wrap: nowrap);
+	@include flexbox($direction: row, $justify: flex-start, $wrap: wrap);
 	@include hide-scrollbars;
 	width: $sidebar-width;
 	transition: transform 165ms ease-in;
 	overflow-y: scroll;
 	border-left: $border;
 	padding: $whitespace;
+	
+	&__infobox {
+		padding: $whitespace/2;
+		background: darken($color-grey, 5%);
+		margin-bottom: $whitespace;
+		font-size: $font-size - 1;
+	}
 
 	@include respond-between(m, xxl) {
 		z-index: 1;

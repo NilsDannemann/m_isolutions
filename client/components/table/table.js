@@ -41,11 +41,11 @@ Template.table.events({
         var tableControls = Session.get('tableControls');
 
         if (tableControls == null) {
-            Session.set('tableControls', 'nocontrols')
-            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are hidden'});
+            Session.set('tableControls', 'showcontrols')
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are visible'});
         } else{
             Session.set('tableControls', null)
-            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are visible'});
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are hidden'});
         };
     }
 });

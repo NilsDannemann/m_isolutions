@@ -18,9 +18,9 @@ Meteor.startup(function () {
 });
 
 // Sample Alert
-Template.navigation.events({
-	'click .navigation--icons': function() {
-		// sAlert.info({sAlertIcon: 'ion-information-circled', message: 'Hi there! I\'m an info notification :-)'});
-		sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'Hi there! I\'m a success notification :-)'});
-	}
-});
+// Template.navigation.events({
+// 	'click .navigation--icons': function() {
+// 		sAlert.info({sAlertIcon: 'ion-information-circled', message: 'Hi there! I\'m an info notification :-)'});
+// 		sAlert.success({sAlertIcon: 'ion-checkmark-circled', message: 'Hi there! I\'m a success notification :-)'});
+// 	}
+// });

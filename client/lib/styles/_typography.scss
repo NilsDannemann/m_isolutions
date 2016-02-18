@@ -11,9 +11,13 @@ body {
 }
 
 ul, ol {
-	margin: 0;
+	margin: 0 0 $whitespace/2 0;
 	padding: 0 0 0 $whitespace*0.75;
 	line-height: $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +34,10 @@ h6 { font-size: $font-size*0.67; margin: 0 0 2.33em 0;}
 p {
 	line-height: $line-height;
 	margin: 0 0 $whitespace/2 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 a {

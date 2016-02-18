@@ -268,14 +268,14 @@ table.dataTable.order-column.hover tbody tr:hover.selected>.sorting_3 {
     background-color: #a5b2cb
 }
 
-// NOCONTROLS
+// CONTROLS
 table.dataTable {
     @include transition();
     margin-top: -73px;
     background: #fff;
     position: relative;
 
-    &.nocontrols {
+    &.showcontrols {
         margin-top:0px;
     }
 }
@@ -415,9 +415,9 @@ table.dataTable td {
 .table__controls {
     display: block;
     width: 100%;
-    border: $border;
+    border-bottom: $border;
     overflow: hidden;
-    padding: $whitespace/2;
+    padding: 0 0 $whitespace 0;
     margin-bottom: $whitespace;
 }
 .dataTables_wrapper .dataTables_length {
