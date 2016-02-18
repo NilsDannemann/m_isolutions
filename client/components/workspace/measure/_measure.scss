@@ -1,15 +1,15 @@
 .measure {
 	@include flexbox($direction: row, $justify: flex-start, $wrap: wrap);
 	@include hide-scrollbars;
+	@include transition();
+	z-index: 1;
 	width: $sidebar-width;
-	transition: transform 165ms ease-in;
+	background: $color-grey;
 	overflow-y: scroll;
 	border-right: $border;
 	padding: $whitespace;
 
-	@include respond-between(m, xxl) {
-		z-index: 1;
-		background: $color-grey;
+	@include respond-below(xxl) {
 		margin-right: -$sidebar-width;
 		transform: translateX(-100%);
 

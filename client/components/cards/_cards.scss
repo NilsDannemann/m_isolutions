@@ -11,7 +11,7 @@
 	&--small {	
 		cursor: pointer;
 		padding: $whitespace/2;
-		margin-bottom: $whitespace/2;
+		margin-bottom: $whitespace;
 
 		&:hover {
 			box-shadow: $box-shadow-size-3;

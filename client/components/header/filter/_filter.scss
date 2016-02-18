@@ -18,6 +18,17 @@
 			border-left: $border;
 		}
 	}
+	&__toggle {
+		
+		&--left {
+			border-right: $border;
+			padding-right: $whitespace;
+		}
+		&--right {
+			border-left: $border;
+			padding-left: $whitespace;
+		}
+	}
 	&__main {
 		@include flexbox($align: center);
 		flex: 1;
