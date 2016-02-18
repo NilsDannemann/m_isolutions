@@ -1,17 +1,54 @@
 // Code in common.js
 
 Template.table.onRendered(function() {
+    var uiState = Session.get('uiState');
+
     $('#datatable').DataTable({
-        responsive: true
+        "responsive": true,
+        "pageLength": 25,
+        "searching": true,
+        "paging": true,
+        "sDom": '<"table__controls"lf>rtip' //http://legacy.datatables.net/usage/options#sDom
     });
 });
 
-
- Template.table.helpers({
+Template.table.helpers({
     tablerows: function(){
         return Patients.find({});
+    },
+    uistate: function(){
+        return Session.get('uiState');
+    },
+    tablecontrols: function(){
+        return Session.get('tableControls');
     }
- });
+});
+
+
+Template.table.events({
+    'click .icon--uistate': function(){
+        var uiState = Session.get('uiState');
+
+        if (uiState == null ) {
+            Session.set('uiState', 'compact')
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'UI set to: "compact"'});
+        } else{
+            Session.set('uiState', null)
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'UI set to: "basic"'});
+        };
+    },
+    'click .icon--tablecontrols': function(){
+        var tableControls = Session.get('tableControls');
+
+        if (tableControls == null) {
+            Session.set('tableControls', 'nocontrols')
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are hidden'});
+        } else{
+            Session.set('tableControls', null)
+            sAlert.info({sAlertIcon: 'ion-checkmark-circled', message: 'Table-Controls are visible'});
+        };
+    }
+});
 
 
 

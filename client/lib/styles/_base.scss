@@ -27,6 +27,41 @@ img {
 	}
 }
 
+
+// ICONS
 .icon {
-	color: $color-black;
+
+	&:before {
+		cursor: pointer;
+		color: $color-black;
+	}
+	
+	&--button {
+
+		&:before {
+			min-width: 50px;
+			text-align: center;
+			margin-top: -$whitespace*0.25;
+			padding: $whitespace*0.25 $whitespace*0.75;
+			border-radius: $border-radius;
+			border: $border;
+		}
+	}
+	&--small 	{
+		&:before {font-size: $font-size;}
+	}
+	&--medium 	{
+		&:before {font-size: $font-size + 4;}
+	}
+	&--large 	{
+		&:before {font-size: $font-size + 10;}
+	}
+}
+
+// STATE
+.is-hidden {
+	display: none;
+}
+.is-visible {
+	display: block;
 }

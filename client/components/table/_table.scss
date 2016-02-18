@@ -105,6 +105,7 @@ table.dataTable tbody tr.selected {
 
 table.dataTable tbody th,
 table.dataTable tbody td {
+    @include transition();
     padding: $whitespace/2;
     font-size: $font-size - 1px;
 }
@@ -267,6 +268,17 @@ table.dataTable.order-column.hover tbody tr:hover.selected>.sorting_3 {
     background-color: #a5b2cb
 }
 
+// NOCONTROLS
+table.dataTable {
+    @include transition();
+    margin-top: -73px;
+    background: #fff;
+    position: relative;
+
+    &.nocontrols {
+        margin-top:0px;
+    }
+}
 
 // NOFOOTER
 table.dataTable.no-footer tfoot {
@@ -277,19 +289,18 @@ table.dataTable.no-footer tfoot {
 // =NOWRAP
 table.dataTable.nowrap th,
 table.dataTable.nowrap td {
-    white-space: nowrap
+    white-space: nowrap;
 }
-
 
 // =COMPACT
 table.dataTable.compact thead th,
 table.dataTable.compact thead td {
-    padding: 4px 17px 4px 4px
+    padding: 4px 17px 4px 0;
 }
 
 table.dataTable.compact tfoot th,
 table.dataTable.compact tfoot td {
-    padding: 4px
+    padding: 4px 17px 4px 0;
 }
 
 table.dataTable.compact tbody th,
@@ -297,8 +308,8 @@ table.dataTable.compact tbody td {
     padding: 4px
 }
 table.dataTable.compact>tbody>tr.child ul li {
-    padding: $whitespace/4 0;
-    font-size: 13px;
+    padding: 0;
+    font-size: 12px;
 }
 
 table.dataTable th.dt-left,
@@ -401,13 +412,19 @@ table.dataTable td {
     zoom: 1;
     width: 100%;
 }
-
+.table__controls {
+    display: block;
+    width: 100%;
+    border: $border;
+    overflow: hidden;
+    padding: $whitespace/2;
+    margin-bottom: $whitespace;
+}
 .dataTables_wrapper .dataTables_length {
     float: left
 }
-
 .dataTables_wrapper .dataTables_length select{
-    margin: 0 0 $whitespace $whitespace/4;
+    margin: 0 0 0 $whitespace/4;
     padding: $whitespace*0.35 $whitespace/4;
     border: $border;
     font-size: $font-size;
@@ -422,9 +439,8 @@ table.dataTable td {
     float: right;
     text-align: right
 }
-
 .dataTables_wrapper .dataTables_filter input {
-    margin: 0 0 $whitespace $whitespace/4;
+    margin: 0 0 0 $whitespace/4;
     padding: $whitespace*0.35 $whitespace/4;
     border: $border;
     font-size: $font-size;
@@ -658,7 +674,7 @@ table.dataTable>tbody>tr.child ul {
 }
 
 table.dataTable>tbody>tr.child ul li {
-    border-bottom: 1px solid #efefef;
+    border-bottom: $border;
     padding: $whitespace/2 0;
     margin-bottom: 0;
 }

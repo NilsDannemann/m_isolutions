@@ -1,8 +1,22 @@
 <template name="table">
-	<h2>View - Table</h2>
+	<h2>View - Table</h2> 
+    <div class="icons">
+        <!-- Table-Controls -->
+        {{#if tablecontrols}}
+            <i class="icon icon--button icon--large icon--tablecontrols ion-toggle-filled"></i>
+        {{else}}
+            <i class="icon icon--button icon--large icon--tablecontrols ion-toggle"></i>
+        {{/if}}
+        <!-- UI State -->
+        {{#if uistate}}
+            <i class="icon icon--large icon--button icon--uistate ion-arrow-expand"></i>
+        {{else}}
+            <i class="icon icon--large icon--button icon--uistate ion-arrow-shrink"></i>
+        {{/if}}
+    </div>
 	<div class="workspace__column">
 		<div class="card">
-            <table id="datatable" class="table hover cell-border dt-responsive nowrap" cellspacing="0" width="100%">
+            <table id="datatable" class="table hover cell-border dt-responsive nowrap {{uistate}} {{tablecontrols}}" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th class="dt-head-left">First</th>
@@ -48,15 +62,15 @@
                     {{/each}}
                 </tbody>
             </table>
-		</div>
-	</div>
-	<div class="workspace__column workspace__column--third">
-		{{> card_workspace}}
-	</div>
-	<div class="workspace__column workspace__column--third">
-		{{> card_workspace}}
-	</div>
-	<div class="workspace__column workspace__column--third">
-		{{> card_workspace}}
-	</div>
+        </div>
+    </div>
+    <div class="workspace__column workspace__column--third">
+      {{> card_workspace}}
+  </div>
+  <div class="workspace__column workspace__column--third">
+      {{> card_workspace}}
+  </div>
+  <div class="workspace__column workspace__column--third">
+      {{> card_workspace}}
+  </div>
 </template>
