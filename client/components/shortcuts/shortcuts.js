@@ -53,16 +53,3 @@ Mousetrap.bind('ctrl+shift+down', function() {
 		Session.set('asideBottom', null);
 	};
 });
-
-// multiple combinations to same callback
-// Mousetrap.bind(['command+p', 'ctrl+p'], function() {
-// 	console.log('command p or control p');
-
-// 	// return false to prevent default browser behavior
-// 	return false;
-// });
-
-// sequences
-// Mousetrap.bind('g i', function() { 
-// 	console.log('go to inbox'); 
-// });

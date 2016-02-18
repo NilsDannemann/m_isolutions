@@ -17,6 +17,22 @@
 			border-left: $border;
 		}
 	}
+	&__controls {
+		@include flexbox($align: center);
+		flex: 1;
+		margin-left: $whitespace/2;
+	}
+	&__options {
+		
+		&--left {
+			border-right: $border;
+			padding-right: $whitespace;
+		}
+		&--right {
+			border-left: $border;
+			padding-left: $whitespace;
+		}
+	}
 	&__main {
 		@include flexbox($align: center);
 		flex: 1;

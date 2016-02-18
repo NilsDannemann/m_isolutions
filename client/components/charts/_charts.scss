@@ -4,6 +4,9 @@
 }
 
 /* Use this selector to override the line style on a given series */
+.ct-line {
+  stroke-width: 2px;
+}
 .ct-series-a .ct-line {
   stroke: $color-brand;
 }
@@ -15,6 +18,9 @@
 }
 
 /* This selector overrides the points style on line charts. Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
+.ct-point {
+    stroke-width: 6px;
+}
 .ct-series-a .ct-point {
   stroke: $color-brand;
 }

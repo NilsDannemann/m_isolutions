@@ -18,6 +18,17 @@
 			border-left: $border;
 		}
 	}
+	&__controls {
+		@include flexbox($align: center);
+		flex: 1;
+
+		&--left {
+			margin-left: $whitespace/2;
+		}
+		&--right {
+			margin-right: $whitespace;
+		}
+	}
 	&__toggle {
 		
 		&--left {

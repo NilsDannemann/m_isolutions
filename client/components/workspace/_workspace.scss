@@ -1,6 +1,7 @@
 .workspace {
-	@include flexbox($align: stretch);
+	@include flexbox($align: stretch, $wrap: nowrap);
 	@include column();
+	overflow-x: hidden;
 	flex: 1;
 
 	&__column {

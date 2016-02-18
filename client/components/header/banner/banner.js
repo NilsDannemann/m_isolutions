@@ -1,3 +1,14 @@
+Template.banner.events({
+	'click .banner': function() {
+		var asideTop = Session.get('asideTop');
+
+		if (asideTop == null) {
+			Session.set('asideTop', 'is-toggled');
+		} else {
+			Session.set('asideTop', null);
+		};
+	}
+});
 Template.banner.helpers({
 	// State
 	state: function(){

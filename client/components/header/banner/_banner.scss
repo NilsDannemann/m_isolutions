@@ -1,11 +1,13 @@
 .banner	{
 	@include flexbox($align: stretch);
 	@include column();
+	@include transition();
 	background: $color-brand;
+	background: radial-gradient(ellipse at 0% 0%, lighten($color-brand, 10%) 0%, $color-brand 50%);
 	min-height: $whitespace*6;
 	color: #fff;
 	
-	&.is-toggled {min-height: $whitespace*12;}
+	&.is-toggled {min-height: $whitespace*20;}
 
 	&__info1 {
 		border-right: $border;
