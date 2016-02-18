@@ -8,12 +8,17 @@
 	overflow-y: scroll;
 	border-right: $border;
 	padding: $whitespace;
+	
+	&.is-toggled {
+		margin-right: -$sidebar-width;
+		transform: translateX(-100%);
+	}
 
 	@include respond-below(xxl) {
 		margin-right: -$sidebar-width;
 		transform: translateX(-100%);
 
-		&.is-active {
+		&.is-toggled {
 			transform: translateX(0);
 		}
 	}

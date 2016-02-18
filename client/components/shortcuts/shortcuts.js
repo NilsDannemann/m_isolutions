@@ -21,7 +21,7 @@ Mousetrap.bind('ctrl+shift+left', function() {
 	var asideLeft = Session.get('asideLeft');
 
 	if (asideLeft == null) {
-		Session.set('asideLeft', 'is-active');
+		Session.set('asideLeft', 'is-toggled');
 	} else {
 		Session.set('asideLeft', null);
 	};
@@ -30,7 +30,7 @@ Mousetrap.bind('ctrl+shift+right', function() {
 	var asideRight = Session.get('asideRight');
 
 	if (asideRight == null) {
-		Session.set('asideRight', 'is-active');
+		Session.set('asideRight', 'is-toggled');
 	} else {
 		Session.set('asideRight', null);
 	};
@@ -39,7 +39,7 @@ Mousetrap.bind('ctrl+shift+up', function() {
 	var asideTop = Session.get('asideTop');
 
 	if (asideTop == null) {
-		Session.set('asideTop', 'is-active');
+		Session.set('asideTop', 'is-toggled');
 	} else {
 		Session.set('asideTop', null);
 	};
@@ -48,7 +48,7 @@ Mousetrap.bind('ctrl+shift+down', function() {
 	var asideBottom = Session.get('asideBottom');
 
 	if (asideBottom == null) {
-		Session.set('asideBottom', 'is-active');
+		Session.set('asideBottom', 'is-toggled');
 	} else {
 		Session.set('asideBottom', null);
 	};

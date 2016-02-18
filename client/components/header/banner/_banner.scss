@@ -5,7 +5,7 @@
 	min-height: $whitespace*6;
 	color: #fff;
 	
-	&.is-active {min-height: $whitespace*12;}
+	&.is-toggled {min-height: $whitespace*12;}
 
 	&__info1 {
 		border-right: $border;

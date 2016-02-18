@@ -3,7 +3,7 @@ Template.filter.events({
 		var asideLeft = Session.get('asideLeft');
 
 		if (asideLeft == null) {
-			Session.set('asideLeft', 'is-active');
+			Session.set('asideLeft', 'is-toggled');
 		} else {
 			Session.set('asideLeft', null);
 		}; 
@@ -12,7 +12,7 @@ Template.filter.events({
 		var asideRight = Session.get('asideRight');
 
 		if (asideRight == null) {
-			Session.set('asideRight', 'is-active');
+			Session.set('asideRight', 'is-toggled');
 		} else {
 			Session.set('asideRight', null);
 		};
