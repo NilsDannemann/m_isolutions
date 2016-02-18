@@ -3,38 +3,24 @@
 	@include column();
 	z-index: 10;
 	background: #fff;
-	box-shadow: $box-shadow;
 
-	&--icons {
-		@include flexbox();
-	}
-	&--icon {
-		cursor: pointer;
-		color: darken($color-grey, 45%);
-		padding: $whitespace/2;
-		font-size: $font-size-icons;
-
-		&:hover {color: $color-black;}
-	}
-
-	&__controls {
+	&__aside {
 		@include flexbox($align: center);
 		height: $toolbar-height;
 		width: $sidebar-width;
-		border-right: $border;
 		padding: 0 $whitespace;
+
+		&--left {
+			border-right: $border;
+		}
+		&--right {
+			border-left: $border;
+		}
 	}
 	&__main {
 		@include flexbox($align: center);
 		flex: 1;
 		height: $toolbar-height;
-		padding: 0 $whitespace;
-	}
-	&__settings {
-		@include flexbox($align: center);
-		height: $toolbar-height;
-		width: $sidebar-width;
-		border-left: $border;
 		padding: 0 $whitespace;
 	}
 }

@@ -11,6 +11,7 @@
 	&--small {	
 		cursor: pointer;
 		padding: $whitespace/2;
+		margin-bottom: $whitespace/2;
 
 		&:hover {
 			box-shadow: $box-shadow-size-3;
@@ -24,9 +25,6 @@
 		border-bottom: $border;
 		padding-bottom: $whitespace/2;
 		margin-bottom: $whitespace/2;
-	}
-	&__icon {
-		color: darken($color-grey, 25%);
 	}
 	&__image {
 		@include column(3/4, $gutter: 10px);

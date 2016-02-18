@@ -2,7 +2,6 @@
 	@include flexbox($align: stretch);
 	@include column();
 	background: $color-brand;
-	background: radial-gradient(ellipse at 0% 0%, lighten($color-brand, 10%) 0%, $color-brand 50%);
 	min-height: $whitespace*6;
 	color: #fff;
 	
@@ -33,6 +32,8 @@
 	// List
 	&__list {
 		margin: 0 $whitespace*2 0 0;
+		padding-left: 0;
+		list-style: none;
 	}
 	&__listitem {
 		

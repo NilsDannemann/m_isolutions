@@ -5,24 +5,23 @@
 	background: #fff;
 	box-shadow: $box-shadow;
 
-	&__filter {
+	&__aside{
 		@include flexbox($align: center);
 		height: $toolbar-height;
 		width: $sidebar-width;
-		border-right: $border;
 		padding: 0 $whitespace;
+
+		&--left {
+			border-right: $border;
+		}
+		&--right {
+			border-left: $border;
+		}
 	}
 	&__main {
 		@include flexbox($align: center);
 		flex: 1;
 		height: $toolbar-height;
-		padding: 0 $whitespace;
-	}
-	&__aside{
-		@include flexbox($align: center);
-		height: $toolbar-height;
-		width: $sidebar-width;
-		border-left: $border;
 		padding: 0 $whitespace;
 	}
 }

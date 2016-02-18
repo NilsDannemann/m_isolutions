@@ -1,23 +1,21 @@
 <template name="navigation">
 	<section class="navigation">
-		<div class="navigation__controls">
-			<div class="navigation--icons">
-				<i class="icon navigation--icon navigation--prev ion-android-arrow-dropleft"></i>
-				<i class="icon navigation--icon navigation--next ion-android-arrow-dropright"></i>
+		<!-- Aside left -->
+		<div class="navigation__aside navigation__aside--left">
+			<div class="icongroup">
+				<i class="icon icon--navigation icon--navigation-prev ion-android-arrow-dropleft"></i>
+				<i class="icon icon--navigation icon--navigation-next ion-android-arrow-dropright"></i>
 			</div>
 			controls 
 			</div>
+		<!-- Main -->
 		<div class="navigation__main">
 			main
-			<div class="navigation--icons">
-				<i class="navigation--icon icon ion-android-search"></i>
-			</div>
 		</div>
-		<div class="navigation__settings">
+		<!-- Aside Right -->
+		<div class="navigation__aside navigation__aside--right">
 			settings
-			<div class="navigation--icons">
-				<i class="navigation--icon icon ion-android-more-horizontal"></i>
-			</div>
+			<i class="navigation--icon icon ion-android-more-horizontal"></i>
 		</div>
 	</section>
 </template>

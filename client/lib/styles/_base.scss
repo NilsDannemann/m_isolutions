@@ -29,19 +29,30 @@ img {
 
 
 // ICONS
+.icongroup {
+	@include flexbox();
+}
+
 .icon {
 
 	&:before {
 		cursor: pointer;
 		color: $color-black;
+		font-size: $font-size + 7;
 	}
 	
+	&--navigation {
+		cursor: pointer;
+		color: darken($color-grey, 45%);
+		padding: $whitespace/2;
+	}
+
 	&--button {
 
 		&:before {
 			min-width: 50px;
 			text-align: center;
-			margin-top: -$whitespace*0.25;
+			margin-top: -$whitespace*0.35;
 			padding: $whitespace*0.25 $whitespace*0.75;
 			border-radius: $border-radius;
 			border: $border;
@@ -51,7 +62,7 @@ img {
 		&:before {font-size: $font-size;}
 	}
 	&--medium 	{
-		&:before {font-size: $font-size + 4;}
+		&:before {font-size: $font-size + 7;}
 	}
 	&--large 	{
 		&:before {font-size: $font-size + 10;}

@@ -1,5 +1,5 @@
 // Keys
-Mousetrap.bind('g h', function() { 
+Mousetrap.bind('v d', function() { 
 	FlowRouter.go('/');
 });
 Mousetrap.bind('v l', function() { 
